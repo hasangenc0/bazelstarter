@@ -1,0 +1,17 @@
+{
+    "name": "bazelstarter",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "bazel build //...",
+        "test": "bazel test //...",
+        "draw:graph": "bazel query --output=graph ... | dot -Tpng > docs/graph.png"
+    },
+    "devDependencies": {
+        "@bazel/bazelisk": "latest",
+        "@bazel/buildifier": "latest",
+        "@bazel/ibazel": "latest",
+        "@bazel/typescript": "1.7.0",
+        "typescript": "3.9.5"
+    }
+}
